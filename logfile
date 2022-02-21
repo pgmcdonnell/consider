@@ -29,3 +29,16 @@
 2022-02-21 14:32:40.862 GMT [8227] ERROR:  duplicate key value violates unique constraint "users_tokens_context_token_index"
 2022-02-21 14:32:40.862 GMT [8227] DETAIL:  Key (context, token)=(session, \xa97dd317c6a3aaf78557d0d37cdc3a546db3ef085f66d1a0f83ab4c0c87b8ff5) already exists.
 2022-02-21 14:32:40.862 GMT [8227] STATEMENT:  INSERT INTO "users_tokens" ("context","token","user_id","inserted_at") VALUES ($1,$2,$3,$4) RETURNING "id"
+2022-02-21 14:34:55.148 GMT [1760] LOG:  received smart shutdown request
+2022-02-21 14:34:55.149 GMT [1760] LOG:  background worker "logical replication launcher" (PID 1767) exited with exit code 1
+2022-02-21 14:34:55.149 GMT [1762] LOG:  shutting down
+2022-02-21 14:34:55.176 GMT [1760] LOG:  database system is shut down
+2022-02-21 20:41:58.038 GMT [1834] LOG:  starting PostgreSQL 14.2 on aarch64-apple-darwin21.3.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.30), 64-bit
+2022-02-21 20:41:58.040 GMT [1834] LOG:  listening on IPv6 address "::1", port 5432
+2022-02-21 20:41:58.040 GMT [1834] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-02-21 20:41:58.040 GMT [1834] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-02-21 20:41:58.050 GMT [1835] LOG:  database system was shut down at 2022-02-21 14:34:55 GMT
+2022-02-21 20:41:58.054 GMT [1834] LOG:  database system is ready to accept connections
+2022-02-21 20:53:45.555 GMT [2309] ERROR:  duplicate key value violates unique constraint "users_tokens_context_token_index"
+2022-02-21 20:53:45.555 GMT [2309] DETAIL:  Key (context, token)=(session, \xc981afca26f5ad2cf5d8981612609f9d761e615d04fa125f3393fc3860a6676b) already exists.
+2022-02-21 20:53:45.555 GMT [2309] STATEMENT:  INSERT INTO "users_tokens" ("context","token","user_id","inserted_at") VALUES ($1,$2,$3,$4) RETURNING "id"
