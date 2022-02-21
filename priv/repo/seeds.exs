@@ -9,8 +9,21 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
-alias Consider.Accounts.User
 alias Consider.Accounts
 
+alias Consider.Content
+
 %{email: "pgm15@hotmail.com", password: "changemeR!ghtAway"}
-|> Consider.Accounts.register_user()
+|> Accounts.register_user()
+
+%{name: "Fundamentals", description: "The foundational building blocks of Elixir."}
+|> Content.create_section()
+
+%{name: "Testing", description: "Elixir testing basics through to niche test scenarios."}
+|> Content.create_section()
+
+%{name: "Phoenix", description: "Leveraging the powerful Phoenix framework."}
+|> Content.create_section()
+
+%{name: "Packages", description: "Rundowns of useful Hex packages."}
+|> Content.create_section()
