@@ -42,3 +42,9 @@
 2022-02-21 20:53:45.555 GMT [2309] ERROR:  duplicate key value violates unique constraint "users_tokens_context_token_index"
 2022-02-21 20:53:45.555 GMT [2309] DETAIL:  Key (context, token)=(session, \xc981afca26f5ad2cf5d8981612609f9d761e615d04fa125f3393fc3860a6676b) already exists.
 2022-02-21 20:53:45.555 GMT [2309] STATEMENT:  INSERT INTO "users_tokens" ("context","token","user_id","inserted_at") VALUES ($1,$2,$3,$4) RETURNING "id"
+2022-02-21 21:05:16.508 GMT [3557] ERROR:  duplicate key value violates unique constraint "users_tokens_context_token_index"
+2022-02-21 21:05:16.508 GMT [3557] DETAIL:  Key (context, token)=(session, \xa95815be7b1c75ad0f3cf10ecd5954e1d6aebea83c1fdac3c74ec3909cfe20e0) already exists.
+2022-02-21 21:05:16.508 GMT [3557] STATEMENT:  INSERT INTO "users_tokens" ("context","token","user_id","inserted_at") VALUES ($1,$2,$3,$4) RETURNING "id"
+2022-02-21 21:09:05.949 GMT [4582] ERROR:  duplicate key value violates unique constraint "users_tokens_context_token_index"
+2022-02-21 21:09:05.949 GMT [4582] DETAIL:  Key (context, token)=(session, \x13fab5b79cf2a4332c3630c4dd6e19b7a7cc60f1981705a2c5c84d8c7544a3d5) already exists.
+2022-02-21 21:09:05.949 GMT [4582] STATEMENT:  INSERT INTO "users_tokens" ("context","token","user_id","inserted_at") VALUES ($1,$2,$3,$4) RETURNING "id"
