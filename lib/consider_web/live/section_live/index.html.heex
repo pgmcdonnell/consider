@@ -1,0 +1,21 @@
+<div class="text-white">
+
+    <h1>Listing Products</h1>
+
+    <table>
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody id="sections">
+        <%= for section <- @sections do %>
+        <tr id={"section-#{section.id}"}>
+            <td><%= live_redirect section.name, to: Routes.section_show_path(@socket, :show, section) %></td>
+            <td><%= section.description %></td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
+</div>
